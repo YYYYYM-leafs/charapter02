@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.charapter02">
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Charapter02">
+        <activity android:name=".ThridActivity">
+            <intent-filter>
+                <action android:name="android.intent.ACTION_DIAL" />
+<!--                <action android:name="android.intent.ACTION_VIEW" />-->
+                <category android:name="android.intent.category.DEFAULT" />
+<!--                <data android:scheme="http" />-->
+            </intent-filter>
+        </activity>
+
+<!--   其他三种启动模式     -->
+<!--        <activity android:name=".SecondActivity">-->
+<!--            <intent-filter>-->
+<!--                &lt;!&ndash; 只能有一个action但是可以有多个category &ndash;&gt;-->
+<!--                &lt;!&ndash; <action>标签中我们指明了当前活动可以响应com.example. charapter02.ACTION_START这个action &ndash;&gt;-->
+<!--                <action android:name="com.example.charapter02.ACTION_START" />-->
+<!--                &lt;!&ndash;-->
+<!--                <category>标签则包含了一些附加信息，更精确地指明了当前的活动能使用Intent在活动之间穿梭够响应的Intent中还可能带有的category。-->
+<!--                只有<action>和<category>中的内容同时能够匹配上Intent中指定的action和category时，这个活动才能响应该Intent。-->
+<!--                &ndash;&gt;-->
+<!--                <category android:name="android.intent.category.DEFAULT" />-->
+<!--                <category android:name="com.example.charapter02.MY_CATEGORY" />-->
+<!--            </intent-filter>-->
+<!--        </activity>-->
+
+<!--        singleInstance启动模式-->
+            <activity android:name=".SecondActivity"
+                android:launchMode="singleInstance">
+                <intent-filter>
+                    <!-- 只能有一个action但是可以有多个category -->
+                    <!-- <action>标签中我们指明了当前活动可以响应com.example. charapter02.ACTION_START这个action -->
+                    <action android:name="com.example.charapter02.ACTION_START" />
+                    <!--
+                    <category>标签则包含了一些附加信息，更精确地指明了当前的活动能使用Intent在活动之间穿梭够响应的Intent中还可能带有的category。
+                    只有<action>和<category>中的内容同时能够匹配上Intent中指定的action和category时，这个活动才能响应该Intent。
+                    -->
+                    <category android:name="android.intent.category.DEFAULT" />
+                    <category android:name="com.example.charapter02.MY_CATEGORY" />
+                </intent-filter>
+            </activity>
+
+
+
+
+        <!--   standard启动模式     -->
+<!--        <activity-->
+<!--            android:name=".FirstActivity"-->
+<!--            android:label="This is FristActivity">-->
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+<!--        </activity>-->
+
+
+        <!--   singleTop启动模式     -->
+<!--        <activity-->
+<!--            android:name=".FirstActivity"-->
+<!--            android:label="This is FristActivity"-->
+<!--            android:launchMode="singleTop">-->
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+<!--        </activity>-->
+
+        <!--   singleTask启动模式     -->
+<!--        <activity-->
+<!--            android:name=".FirstActivity"-->
+<!--            android:label="This is FristActivity"-->
+<!--            android:launchMode="singleTask">-->
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+<!--        </activity>-->
+
+        <!--   singleInstance启动模式     -->
+            <activity
+                android:name=".FirstActivity"
+                android:label="This is FristActivity">
+                <intent-filter>
+                    <action android:name="android.intent.action.MAIN" />
+                    <category android:name="android.intent.category.LAUNCHER" />
+                </intent-filter>
+            </activity>
+    </application>
+
+</manifest>

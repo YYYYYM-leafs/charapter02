@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--    match_parent  和父元素一样宽或高   -->
+    <!--    wrap_content  自适应宽高  -->
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/button_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="短时提示" />
+
+            <Button
+                android:id="@+id/button_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="长时提示" />
+
+            <Button
+                android:id="@+id/button_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="销毁" />
+
+            <Button
+                android:id="@+id/button_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="显式Internet" />
+
+            <Button
+                android:id="@+id/button_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="隐式Internet不设置category" />
+
+            <Button
+                android:id="@+id/button_6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="隐式Internet设置category" />
+
+            <Button
+                android:id="@+id/button_7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="隐式Internet启动其他程序(以浏览器为例)" />
+
+            <Button
+                android:id="@+id/button_8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="隐式Internet启动其他程序(以电话为例)" />
+
+            <Button
+                android:id="@+id/button_9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Internet活动传参" />
+
+            <Button
+                android:id="@+id/button_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Internet活动返回传参（startActivityForResult）" />
+
+            <Button
+                android:id="@+id/button_11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="standard启动模式" />
+
+            <Button
+                android:id="@+id/button_12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="singleTop启动模式" />
+
+            <Button
+                android:id="@+id/button_13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="singleTask启动模式" />
+
+            <Button
+                android:id="@+id/button_14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="singleInstance启动模式" />
+
+            <Button
+                android:id="@+id/button_15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="调用ActivityCollector.finishAll()结束所有活动" />
+
+            <Button
+                android:id="@+id/button_16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="程序多人开发时适用的启动活动的方法，方便别人调用" />
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--    match_parent  和父元素一样宽或高   -->
+    <!--    wrap_content  自适应宽高  -->
+
+    <Button
+        android:id="@+id/button_20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="按钮" />
+
+    <Button
+        android:id="@+id/button_21"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="singleTop启动模式" />
+    <Button
+        android:id="@+id/button_22"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="singleTask启动模式" />
+    <Button
+        android:id="@+id/button_23"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="singleInstance启动模式" />
+    <Button
+        android:id="@+id/button_24"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="调用ActivityCollector.finishAll()结束所有活动" />
+</LinearLayout>

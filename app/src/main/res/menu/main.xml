@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<!--    <item>标签用来创建具体的菜单项，-->
+<!--    android:id给这个菜单项指定一个唯一的标识符，-->
+<!--    android:title给这个菜单项指定一个名称。-->
+
+    <item
+        android:title="Add"
+        android:id="@+id/add_item"/>
+    <item
+        android:title="Remove"
+        android:id="@+id/remove_item"/>
+</menu>
